@@ -1,0 +1,9 @@
+<div id="nav-container">
+  {{#liquid-if showNavigation class=(if showNavigation "show-navigation")}}
+    <div id="navigation">navigation</div>
+  {{else}}
+    <!-- no menu -->
+    <div id="navigation">out</div>
+  {{/liquid-if}}
+  <div id="main-content">{{yield}}</div>
+</div>
