@@ -1,31 +1,147 @@
 #nav-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width:100%;
-  min-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    min-height: 50px;
 }
 
 .ui-fire-nav .nav-button {
-  background-color: #E3E3E3;
-  width: 35px;
-  height: 28px;
-  border-radius: 4px;
-  padding-top: 3px;
+    background-color: #E3E3E3;
+    width: 35px;
+    height: 28px;
+    border-radius: 4px;
+    padding-top: 3px;
 }
 
 .ui-fire-nav .nav-button .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 1px;
-  margin-left: 6px;
-  margin-top: 4px;
-  background-color: #888;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-left: 6px;
+    margin-top: 4px;
+    background-color: #888;
 }
 
 
 .ui-fire-nav .nav-button:hover {
-  background-color: #CDCDCD;
-  cursor: pointer;
+    background-color: #CDCDCD;
+    cursor: pointer;
+}
+
+
+@keyframes revealLeft {
+  0% {
+    transform: translate3d(-300px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.revealLeft {
+  animation-name: revealLeft;
+}
+
+@keyframes concealLeft {
+  0% {
+      transform: translate3d(0px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-300px, 0, 0);
+  }
+}
+
+.concealLeft {
+  animation-name: concealLeft;
+}
+
+
+
+// ---
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY {
+  animation-duration: .75s;
+}
+
+// ----
+
+everything {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    width: 100%;
+    height: 100%; 
+}
+
+app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.windowFrame {
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    overflow: hidden;
+    height: 100%;
+    transform: translate3d(-300px, 0, 0);
+}
+
+body { margin-left: 0px; }
+
+nav {
+/*    position: relative;
+    top:0;
+    left:-300px;
+*/
+    width: 300px;
+    height:100%;
+    background-color: #ECECEC;
+    z-index: 10;
+    border-width: 1px;
+    border-color: #ddd;
+}
+
+nav .header {
+    background-color: #ADADAD;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+content {
+    float:left;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 20px;
+/*    width: calc(100% + 260px);*/
 }

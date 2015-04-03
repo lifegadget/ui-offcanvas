@@ -1,9 +1,37 @@
-{{#nav-menu expandAt=2000 menuItems=navLinks toggleNavigation=navToggle showNavigation=showNavigation}}
-  <div class="container">
-    <h1 id="title">ui-fire-nav</h1>
-    <h2>off canvas menus leveraging the liquid-fire library</h2>
+<app>
 
-    <h3>Example</h3>
-    {{nav-button action="navToggle"}}
-  </div>
-{{/nav-menu}}
+    <div class="windowFrame ">
+        <nav class="">
+            <div class="header"></div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+        <content >
+            <div class="container">
+                <p class="col-xs-12">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            
+                <p class="col-xs-6">          
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p class="col-xs-6">          
+                    Another column of stuff<br/>
+                    {{nav-button}}
+                </p>            
+            </div>
+        </content>
+    </div>
+    
+</app>

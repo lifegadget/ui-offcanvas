@@ -12,7 +12,8 @@ export default Ember.Controller.extend({
   actions: {
     navToggle: function() {
       console.log('made it');
-      this.toggleProperty('showNavigation');
+      // this.toggleProperty('showNavigation');
+      // this.$('.lefty').addClass('animated bounceOutLeft');
     },
   }
   
