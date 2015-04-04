@@ -3,7 +3,7 @@ import layout from '../templates/components/nav-button';
 
 export default Ember.Component.extend({
     layout: layout,
-    classNames: ['ui-fire-nav'],
+    classNames: ['ui-offcanvas'],
     toggleSwitch: true,
   
     click: function() {

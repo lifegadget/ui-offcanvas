@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ui-fire-nav'
+  name: 'ui-offcanvas'
 };

@@ -1,3 +1,3 @@
-import navMenu from 'ui-fire-nav/components/nav-menu';
+import navMenu from 'ui-offcanvas/components/nav-menu';
 
 export default navMenu;

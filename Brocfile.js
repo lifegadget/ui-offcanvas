@@ -10,6 +10,6 @@ app.import('bower_components/animate.css/animate.css');
 // app.import('bower_components/animate.css/source/sliding_entrances/slideInLeft.css');
 // app.import('bower_components/animate.css/source/sliding_entrances/slideInRight.css');
 
-app.import('vendor/ui-fire-nav/ui-fire-nav.css');
+app.import('vendor/ui-offcanvas/ui-offcanvas.css');
 
 module.exports = app.toTree();
