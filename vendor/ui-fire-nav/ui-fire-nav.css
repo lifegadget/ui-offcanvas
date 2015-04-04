@@ -1,3 +1,64 @@
+outer-wrap {
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+    margin:0;
+}
+
+inner-wrap {
+    position: relative;
+    display: flex;
+    width: calc(100% + 275px);
+    height: 100%;
+    transform: translate3d(-275px, 0, 0);
+}
+
+nav {
+    position: relative;
+    width: 275px;
+    height: 100%;
+    box-shadow: inset -10px 0 15px -10px rgba(0, 0, 0, 0.15);
+    background-color: #ECECEC;
+    z-index: 100;
+}
+
+nav .header {
+    background-color: #ADADAD;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+content {
+    flex-grow: 3;
+    display:block;
+    width: calc(100% - 275px);
+    overflow: scroll;
+}
+
+content main {
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+
+content navbar {
+    display: block;
+    min-height: 80px;
+    line-height: 50px;
+    background-color: #7F7F7F;
+    width: 100%;
+}
+
+content footer {
+    display:block;
+    background: black;
+    color: white;
+}
+
+
 #nav-container {
     position: fixed;
     top: 0;
@@ -7,6 +68,8 @@
 }
 
 .ui-fire-nav .nav-button {
+    float: left;
+    margin-top: 6px;
     background-color: #E3E3E3;
     width: 35px;
     height: 28px;
@@ -33,7 +96,7 @@
 
 @keyframes revealLeft {
   0% {
-    transform: translate3d(-300px, 0, 0);
+    transform: translate3d(-275px, 0, 0);
   }
 
   100% {
@@ -43,6 +106,7 @@
 
 .revealLeft {
   animation-name: revealLeft;
+  animation-duration: .5s;
 }
 
 @keyframes concealLeft {
@@ -51,12 +115,13 @@
   }
 
   100% {
-    transform: translate3d(-300px, 0, 0);
+    transform: translate3d(-275px, 0, 0);
   }
 }
 
 .concealLeft {
   animation-name: concealLeft;
+  animation-duration: .5s;
 }
 
 
@@ -86,62 +151,4 @@
   animation-duration: .75s;
 }
 
-// ----
 
-everything {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0px;
-    width: 100%;
-    height: 100%; 
-}
-
-app {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-.windowFrame {
-    position: relative;
-    display: flex;
-    top: 0;
-    left: 0;
-    margin: 0px;
-    overflow: hidden;
-    height: 100%;
-    transform: translate3d(-300px, 0, 0);
-}
-
-body { margin-left: 0px; }
-
-nav {
-/*    position: relative;
-    top:0;
-    left:-300px;
-*/
-    width: 300px;
-    height:100%;
-    background-color: #ECECEC;
-    z-index: 10;
-    border-width: 1px;
-    border-color: #ddd;
-}
-
-nav .header {
-    background-color: #ADADAD;
-    height: 50px;
-    margin-bottom: 15px;
-}
-
-content {
-    float:left;
-    z-index: 1;
-    margin-left: 20px;
-    margin-top: 20px;
-/*    width: calc(100% + 260px);*/
-}

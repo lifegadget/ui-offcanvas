@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   
-  showNavigation: false,
+  showNavigation: true,
   navLinks: [
     {name: 'Home', action: 'goHome'},
     {name: 'About', action: 'goAbout'},
@@ -12,8 +12,6 @@ export default Ember.Controller.extend({
   actions: {
     navToggle: function() {
       console.log('made it');
-      // this.toggleProperty('showNavigation');
-      // this.$('.lefty').addClass('animated bounceOutLeft');
     },
   }
   

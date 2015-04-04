@@ -8,7 +8,7 @@ export default Ember.Component.extend({
   
     click: function() {
         let switcher = this.get('toggleSwitch');
-        let $selector = this.$().parents().find('.windowFrame');
+        let $selector = this.$().parents().find('inner-wrap');
         if(switcher) {
             $selector.addClass('animated revealLeft');      
         } else {
