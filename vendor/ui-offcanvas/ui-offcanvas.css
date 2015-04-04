@@ -1,3 +1,10 @@
+// ui-offcanvas SCSS style sheet
+// -----------------------------
+
+body {
+    margin: 0px;
+}
+
 outer-wrap {
     position: absolute;
     top:0;
@@ -11,14 +18,14 @@ outer-wrap {
 inner-wrap {
     position: relative;
     display: flex;
-    width: calc(100% + 275px);
+    width: calc(100% + 300px);
     height: 100%;
-    transform: translate3d(-275px, 0, 0);
+    transform: translate3d(-300px, 0, 0);
 }
 
 nav {
     position: relative;
-    width: 275px;
+    width: 300px;
     height: 100%;
     box-shadow: inset -10px 0 15px -10px rgba(0, 0, 0, 0.15);
     background-color: #ECECEC;
@@ -34,7 +41,7 @@ nav .header {
 content {
     flex-grow: 3;
     display:block;
-    width: calc(100% - 275px);
+    width: calc(100% - 300px);
     overflow: scroll;
 }
 
@@ -96,7 +103,7 @@ content footer {
 
 @keyframes revealLeft {
   0% {
-    transform: translate3d(-275px, 0, 0);
+    transform: translate3d(-300px, 0, 0);
   }
 
   100% {
@@ -115,7 +122,7 @@ content footer {
   }
 
   100% {
-    transform: translate3d(-275px, 0, 0);
+    transform: translate3d(-300px, 0, 0);
   }
 }
 
