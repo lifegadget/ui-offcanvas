@@ -34,7 +34,7 @@ There are a few lightweight packages that this addon will install for you:
 ## Components ##
 
 ### ui-navmenu ###
-
+§
 This is the primary/master component. If you can live with the "inline" implementation than this is the only component you'll need. 
 
 
